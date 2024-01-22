@@ -60,3 +60,54 @@ nav ul li a:hover::after{
     margin-left: 10%;
     font-size: 55px;
 }
+
+/* -----about----- */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about_col_1{
+    flex-basis: 30%;/*flex item ar initial length*/
+}
+
+.about_col_1  img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about_col_2{
+    flex-basis: 65%; /*here 30+65=95 so 5% gap ta  hobe row ar vitore joto class thakbe tader majhe*/
+
+}
+.tab_titles{
+display: flex;
+margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer; /*skill edu ar upor mouse nile hand sign dibe*/
+    position: relative;/*  relative positioning moves an element relative to its default position on the page, while absolute positioning moves an element relative to its nearest positioned ancestor.*/
+}
+.tab-links::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-links:hover::after{
+    width: 100%;
+}
