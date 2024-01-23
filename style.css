@@ -1,113 +1,111 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
-body{
-    background: #080808;
-    color: #fff;
+body {
+  background: #080808;
+  color: #fff;
 }
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(background.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(background.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-.container{
-    padding: 10px 10%;
-}
-
-nav{
-    display: flex;    /*item gulo image ar pashe side by side */
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.logo{
-    width: 140px;
-}
-nav ul li{
-    display: inline-block;  /* sm line a logo, nav bar items chole ashbe*/
-    list-style: none;
-    margin: 0px,20px;
-}
-nav ul li a{
-    color :#fff;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-}
-nav ul li a::after{
-    width: 0;
-    content: '';
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-nav ul li a:hover::after{
-    width: 100%;
-
+.container {
+  padding: 10px 10%;
 }
 
-.header-text h1{
-    margin-top: 10%;
-    margin-left: 10%;
-    font-size: 55px;
+nav {
+  display: flex; /*item gulo image ar pashe side by side */
+  align-items: center;
+  
+  justify-content: space-between;
+}
+.logo {
+  width: 140px;
+}
+nav ul li {
+  display: inline-block; /* sm line a logo, nav bar items chole ashbe*/
+  list-style: none;
+
+  margin: 0px, 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  width: 0;
+  content: '';
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text h1 {
+  margin-top: 10%;
+  margin-left: 10%;
+  font-size: 55px;
 }
 
 /* -----about----- */
-#about{
-    padding: 80px 0;
-    color: #ababab;
+#about {
+  padding: 80px 0;
+  color: #ababab;
 }
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.about_col_1{
-    flex-basis: 30%;/*flex item ar initial length*/
+.about_col_1 {
+  flex-basis: 30%; /*flex item ar initial length*/
 }
 
-.about_col_1  img{
-    width: 100%;
-    border-radius: 15px;
+.about_col_1 img {
+  width: 100%;
+  border-radius: 15px;
 }
-.about_col_2{
-    flex-basis: 65%; /*here 30+65=95 so 5% gap ta  hobe row ar vitore joto class thakbe tader majhe*/
-
+.about_col_2 {
+  flex-basis: 65%; /*here 30+65=95 so 5% gap ta  hobe row ar vitore joto class thakbe tader majhe*/
 }
-.tab_titles{
-display: flex;
-margin: 20px 0 40px;
+.tab_titles {
+  display: flex;
+  margin: 20px 0 40px;
 }
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer; /*skill edu ar upor mouse nile hand sign dibe*/
-    position: relative;/*  relative positioning moves an element relative to its default position on the page, while absolute positioning moves an element relative to its nearest positioned ancestor.*/
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer; /*skill edu ar upor mouse nile hand sign dibe*/
+  position: relative; /*  relative positioning moves an element relative to its default position on the page, while absolute positioning moves an element relative to its nearest positioned ancestor.*/
 }
-.tab-links::after{
-    content: "";
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-
+.tab-links::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
 }
-.tab-links.active-link::after{
-    width: 50%;
+.tab-links.active-link::after {
+  width: 50%;
 }
-.tab-links:hover::after{
-    width: 100%;
+.tab-links:hover::after {
+  width: 100%;
 }
