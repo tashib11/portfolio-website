@@ -109,3 +109,16 @@ nav ul li a:hover::after {
 .tab-links:hover::after {
   width: 100%;
 }
+.tab-contents ul li{
+  margin: 10px 0;
+}
+.tab-contents ul li span{
+  color: #b54769;
+  font-size: 14px;
+}
+.tab-contents{
+  display: none;
+}
+.tab-contents.active-tab{
+  display: block;
+}
