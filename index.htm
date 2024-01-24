@@ -37,16 +37,16 @@
                     fdhffdfgdhfdh<br>dfsyfgdsgf
                 </p>
                 <div class="tab_titles">
-                    <p class="tab-links active-link" >Skills</p>
-                    <p class="tab-links">Education</p>
+                    <p class="tab-links active-link" onclick="openTab('skills')"  >Skills</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
                 </div>
-                <div class="tab-contents  active-tab" >
+                <div class="tab-contents  active-tab" id="skills" >
                     <ul>
                         <li><span>Web Development</span><br>Full Stack web development</li>
                         <li><span>App Development</span><br>Building Android</li>
                     </ul>
                 </div>
-                <div class="tab-contents" >
+                <div class="tab-contents" id="education">
                     <ul>
                         <li><span>HSC 2020</span><br>From Notre Dame College</li>
                         <li><span>CSE 2025</span><br>Khulna University of Engineering and Techniology</li>
@@ -57,5 +57,7 @@
             </div>
         </div>
    
+     
+         <script src="./script.js"></script>
 </body>
 </html>
