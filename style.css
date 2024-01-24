@@ -106,9 +106,8 @@ nav ul li a:hover::after {
 .tab-links.active-link::after {
   width: 50%;
 }
-.tab-links:hover::after {
-  width: 100%;
-}
+
+
 .tab-contents ul li{
   margin: 10px 0;
 }
@@ -117,8 +116,8 @@ nav ul li a:hover::after {
   font-size: 14px;
 }
 .tab-contents{
-  display: none;
+  display: none;  /* joto gulo tab content class ar silo shobai hide hoye jabe*/
 }
 .tab-contents.active-tab{
-  display: block;
+  display: block;  /* but protom website a dhuktei active tab class ar jei tab content ase sheta show to kora lagbe*/
 }
