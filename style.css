@@ -25,6 +25,7 @@ nav {
   align-items: center;
   
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .logo {
   width: 140px;
@@ -32,8 +33,8 @@ nav {
 nav ul li {
   display: inline-block; /* sm line a logo, nav bar items chole ashbe*/
   list-style: none;
-
-  margin: 0px, 20px;
+     
+  margin: 10px 20px;
 }
 nav ul li a {
   color: #fff;
@@ -82,7 +83,7 @@ nav ul li a:hover::after {
 .about_col_2 {
   flex-basis: 65%; /*here 30+65=95 so 5% gap ta  hobe row ar vitore joto class thakbe tader majhe*/
 }
-.tab_titles {
+.tab-titles {
   display: flex;
   margin: 20px 0 40px;
 }
@@ -120,4 +121,82 @@ nav ul li a:hover::after {
 }
 .tab-contents.active-tab{
   display: block;  /* but protom website a dhuktei active tab class ar jei tab content ase sheta show to kora lagbe*/
+}
+
+/* portfolio---------- */
+#portfolio{
+  padding: 50px 0;
+}
+.work-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); /*1fr means 1 part of available space*/
+  /* grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); These keywords tell the browser to handle the column sizing and element wrapping for us so that the elements will wrap into rows when the width is not large enough to fit them in without any overflow. */
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work{
+  border-radius: 10px;
+  position: relative;/*because layer class k ancestor(work) ar shathe relatively position dite*/
+  overflow: hidden;
+}
+.work img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer{
+  width: 100%;
+  height:0;
+  background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* margin-bottom: 30%; */
+
+  /*The left: 0 and bottom: 0 properties in CSS are used to position an element at the top left corner of its nearest positioned ancestor (instead of from the viewport).
+
+In your case, .layer is an absolutely positioned element because you have set position: absolute. This means it will be positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport). If an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+So, left: 0 positions the left edge of the .layer element at the left edge of its nearest positioned ancestor. Similarly, bottom: 0 positions the bottom edge of the .layer element at the bottom edge of its nearest positioned ancestor.
+
+This effectively places the .layer element at the bottom left corner of its nearest positioned ancestor*/
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+padding: 0 40px;
+font-size: 14px;
+
+transition: height 0.5s ;
+}
+.layer h2 h3{
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.layer a{
+  margin-top: 20px;
+  color: #ff004f;
+
+  font-size: 18px;
+  line-height: 60px;
+
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+
+ 
+}
+.work:hover img{
+  transform: scale(1.1);/*mouse raklei pic ta zoom in hobe*/
+}
+
+.work:hover .layer{
+  height: 100%;
 }
