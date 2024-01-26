@@ -55,9 +55,13 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
-
+.header-text{
+  margin-top: 20%;
+  font-size: 30px;
+  margin-left: 10%;
+}
 .header-text h1 {
-  margin-top: 10%;
+  margin-top: 20px;
   margin-left: 10%;
   font-size: 55px;
 }
@@ -291,4 +295,45 @@ form .btn2{
 }
 .copyright p span{
   color: #ff004f;
+}
+nav .fa-solid{
+  display: none;
+}
+/* ---css for small screen----- */
+@media only screen and (max-width:600px){ /*0px thekle maximum 600px screen size hole nicher code execute koro generally android*/
+  #header{
+    /* background-image: mobile ize ar pic boshate hbe ; */
+  }
+  .header-text{
+    margin-top:80% ;
+    font-size: 16px;
+  }
+  .header-text h1{
+ font-size: 30px;
+  }
+
+  nav .fa-solid{
+    display: block;/*to visible*/
+    font-size: 25px;
+  }
+  nav ul{
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right:-200px;/*width 200px tai right -200 korsi ,as result side bar hidden hoye gese*/
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+  }
+  nav ul li{
+   margin: 25px;
+   display: block;/*each element ar after and before break dei*/
+  }
+  nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
 }
