@@ -71,6 +71,10 @@ nav ul li a:hover::after {
   padding: 80px 0;
   color: #ababab;
 }
+.sub-title{
+  font-size: 55px;
+   width: 600;
+}
 .row {
   display: flex;
   justify-content: space-between;
@@ -301,9 +305,9 @@ nav .fa-solid{
 }
 /* ---css for small screen----- */
 @media only screen and (max-width:600px){ /*0px thekle maximum 600px screen size hole nicher code execute koro generally android*/
-  #header{
+  /* #header{
     /* background-image: mobile ize ar pic boshate hbe ; */
-  }
+  /* } */ 
   .header-text{
     margin-top:80% ;
     font-size: 16px;
@@ -336,5 +340,28 @@ nav .fa-solid{
     top: 25px;
     left: 25px;
     cursor: pointer;
+  }
+
+  .sub-title{
+    font-size: 40px;
+  }
+  .about_col_1 , .about_col_2{
+    flex-basis: 100%;/*The flex-basis CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing .*/
+  }
+  .about_col_1{
+    margin-bottom: 30px;
+  }
+  .about_col_2{
+    font-size: 14px;
+  }
+  .tab-links {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .contact-left , .contact-right{
+    flex-basis: 100%;
+  }
+  .copyright{
+    font-size: 14px;
   }
 }
