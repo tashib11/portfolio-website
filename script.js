@@ -16,3 +16,13 @@ function openTab(tabname){
 }
 
 //------about page done-------
+
+// sidemenu---------
+var sidemeu= document.getElementById("sidemenu");
+function openMenu(){
+    sidemeu.style.right="0";
+}
+function closeMenu(){
+    sidemeu.style.right="-200px";
+}
+// -----sidemeu created-------
