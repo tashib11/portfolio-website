@@ -26,3 +26,11 @@ function closeMenu(){
     sidemeu.style.right="-200px";
 }
 // -----sidemeu created-------
+
+//header text dynamic approach
+
+var typed= new Typed(".text",{
+    strings:["Full stack developer","Android developer","Web developer"],
+    typeSpeed:80,backSpeed:50,backDelay:900,
+    loop: true
+});

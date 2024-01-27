@@ -32,6 +32,7 @@ nav {
 }
 .logo {
   width: 140px;
+  margin-left: 30px;
 }
 nav ul li {
   display: inline-block; /* sm line a logo, nav bar items chole ashbe*/
@@ -59,13 +60,26 @@ nav ul li a:hover::after {
   width: 100%;
 }
 .header-text{
-  margin-top: 15%;
+  margin-top: 10%;
   font-size: 30px;
   margin-left: 10%;
 }
 .header-text h1 {
   margin-top: 5px;
   font-size: 50px;
+}
+
+.header-text h3{
+font-size: 32px;
+font-weight: 700;
+}
+
+.header-text h3:nth-of-type(2){
+  margin-bottom: 30px;
+}
+
+.header-text h3 span{
+  color: rgb(105, 197, 204);
 }
 
 /* -----about----- */
@@ -228,8 +242,8 @@ transition: height 0.5s ;
 }
 .contact-left p i{
 color: #ff004f;
-margin-right: 15px;
-font-size: 25px;
+margin-right: 10px;
+font-size: 22px;
 }
 .social-icons{
   margin-top: 30px;
@@ -237,23 +251,32 @@ font-size: 25px;
 
 .social-icons a{
   text-decoration: none;
-  font-size: 30px;
-  margin-right: 15px;
-  color: #ababab;
-  display: inline-block;
+  font-size: 20px;
+  margin: 10px 15px 30px 0px;
+  background: transparent;
+  color: #0ef;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   transition: transform 0.5s;
 }
 .social-icons a:hover{
   transform: scale(1.1);
+  background: #0ef;
   color: #ff004f;
   transform: translateY(-5px);
+  box-shadow: 0 0px 20px  #0ef;
 }
 .btn{
   display: block;
   margin: 50px auto;
   width: fit-content;
   border: 1px solid #ff004f;
-  padding: 14px 50px;
+  padding: 10px 30px;
   border-radius: 5px;
   text-decoration: none;
   color: #fff;
@@ -264,11 +287,18 @@ font-size: 25px;
 }
 .btn.btn2{
   display: inline-block;
-  background-color: #ff004f;
+  background: transparent;
+  color: #0ef;
+  border: 2px solid #0ef;
+
   transition: transform .3s;
 }
 .btn.btn2:hover{
   transform: translateY(-2px);
+  background: #0ef;
+color:blue;
+  box-shadow: 0 0px 2px  #0ef;
+
 }
 .contact-right form{
 width: 100%;
@@ -285,7 +315,7 @@ form input, form textarea{
   border-radius: 6px;
 }
 form .btn2{
-  padding: 14px 60px;
+  padding: 7px 30px;
   font-size: 18px;
   margin-top: 20px;
   cursor: pointer;
@@ -321,6 +351,10 @@ nav .fa-solid{
   nav .fa-solid{
     display: block;/*to visible*/
     font-size: 25px;
+  }
+   .logo{
+    font-size: 2px;
+    margin-left: 0;
   }
   nav ul{
     background: #ff004f;
@@ -360,9 +394,13 @@ nav .fa-solid{
     font-size: 16px;
     margin-right: 20px;
   }
+
   .contact-left , .contact-right{
     flex-basis: 100%;
   }
+.contact-left p i{
+  margin-right: 2px;
+}
   .copyright{
     font-size: 14px;
   }
