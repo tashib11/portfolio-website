@@ -340,9 +340,9 @@ nav .fa-solid{
   all: unset;
   position: fixed;
   bottom: 25px;
-  right: 30px;
-  height: 90px;
-  width: 90px;
+  right: 20px;
+  height: 60px;
+  width: 60px;
   background-color: #262626;
   border-radius: 99%;
   display: flex;
@@ -351,13 +351,14 @@ nav .fa-solid{
   cursor: pointer;
 }
 .scroll-up-button .arrow-up{
-width: 28px;
-height: 28px;
-border-left: 4px solid #f9f9f9;
-border-bottom: 4px solid #f9f9f9;
-transform: rotate(135deg);
-margin-bottom: -14px;
-pointer-events: none;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #f9f9f9;
+  margin: auto;
+  display: block;
+  z-index: 1;
 }
 
 /* ---css for small screen----- */
