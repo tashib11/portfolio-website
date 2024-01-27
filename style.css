@@ -335,6 +335,31 @@ form .btn2{
 nav .fa-solid{
   display: none;
 }
+
+.scroll-up-button{
+  all: unset;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  height: 90px;
+  width: 90px;
+  background-color: #262626;
+  border-radius: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.scroll-up-button .arrow-up{
+width: 28px;
+height: 28px;
+border-left: 4px solid #f9f9f9;
+border-bottom: 4px solid #f9f9f9;
+transform: rotate(135deg);
+margin-bottom: -14px;
+pointer-events: none;
+}
+
 /* ---css for small screen----- */
 @media only screen and (max-width:600px){ /*0px thekle maximum 600px screen size hole nicher code execute koro generally android*/
   /* #header{
