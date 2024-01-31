@@ -23,7 +23,7 @@ function openMenu(){
     sidemeu.style.right="0";
 }
 function closeMenu(){
-    sidemeu.style.right="-200px";
+    sidemeu.style.right="-150px";
 }
 // -----sidemeu created-------
 
