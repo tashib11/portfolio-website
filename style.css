@@ -241,10 +241,11 @@ transition: height 0.5s ;
   margin-top: 30px;
 }
 .contact-left p i{
-color: #ff004f;
+color:  #0ef;;
 margin-right: 10px;
 font-size: 22px;
 }
+
 .social-icons{
   margin-top: 30px;
 }
@@ -324,7 +325,7 @@ form .btn2{
   width: 100%;
   text-align: center;
   padding: 20px 0;
-  background: #262626;
+  background: #414040;
   font-weight: 300;
   margin-top: 20px;
   font-size: 18px;
@@ -339,10 +340,10 @@ nav .fa-solid{
 .scroll-up-button{
   all: unset;
   position: fixed;
-  bottom: 25px;
-  right: 30px;
-  height: 90px;
-  width: 90px;
+  bottom: 80px;
+  right: 20px;
+  height: 60px;
+  width: 60px;
   background-color: #262626;
   border-radius: 99%;
   display: flex;
@@ -351,13 +352,14 @@ nav .fa-solid{
   cursor: pointer;
 }
 .scroll-up-button .arrow-up{
-width: 28px;
-height: 28px;
-border-left: 4px solid #f9f9f9;
-border-bottom: 4px solid #f9f9f9;
-transform: rotate(135deg);
-margin-bottom: -14px;
-pointer-events: none;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #f9f9f9;
+  margin: auto;
+  display: block;
+  z-index: 1;
 }
 
 /* ---css for small screen----- */
@@ -366,28 +368,28 @@ pointer-events: none;
     /* background-image: mobile ize ar pic boshate hbe ; */
   /* } */ 
   .header-text{
-    margin-top:80% ;
+    margin-top:60% ;
     font-size: 16px;
   }
   .header-text h1{
  font-size: 30px;
   }
-
+  .logo{
+    font-size: 2px;
+    margin-left: 0;
+  }
   nav .fa-solid{
     display: block;/*to visible*/
     font-size: 25px;
   }
-   .logo{
-    font-size: 2px;
-    margin-left: 0;
-  }
+
   nav ul{
-    background: #ff004f;
-    position: fixed;
+    background: #2a2929;
+    position: fixed; /*by using pos:fised , it fixed the menu bar to the top-right corner as top=0,right=0*/
     top: 0;
-    right:-200px;/*width 200px tai right -200 korsi ,as result side bar hidden hoye gese*/
-    width: 200px;
-    height: 100vh;
+    right:-150px;/*width 200px tai right -200 korsi ,as result side bar hidden hoye gese*/
+    width: 150px;
+    height: 270px;
     padding-top: 50px;
     z-index: 2;
     transition: right 0.5s;
@@ -402,6 +404,8 @@ pointer-events: none;
     left: 25px;
     cursor: pointer;
   }
+
+
 
   .sub-title{
     font-size: 40px;
