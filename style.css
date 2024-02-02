@@ -40,7 +40,7 @@ nav {
 } 
 
 .l{
-  margin-left: 30px;
+  margin-left: 70px;
   left: 0;
 }
 .it{
@@ -54,7 +54,7 @@ nav ul li {
      
   margin: 10px 80px 10px 0;
 }
-@media only screen and (max-width:800px){ 
+@media only screen and (max-width:840px){ 
   .l{
     margin-left: 10px;
   }
@@ -89,14 +89,34 @@ nav ul li a:hover::after {
   width: 100%;
 }
 nav ul li a:hover{
-  color:bisque;
+  color:rgb(191, 152, 107);
   opacity: 0.5;
 }
-.header-text{
-  margin-top: 10%;
-  font-size: 30px;
-  margin-left: 10%;
+.header-row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+.header-col1{
+  flex-basis: 35%;
+}
+.header-col1 img{
+  width: 70%;
+  height: 80%;
+  border-radius: 70px;
+  margin-top: 200px;
+  margin-left:100px ;
+}
+
+.header-col2{
+  flex-basis: 60%;
+
+}
+.header-text{
+    margin-top: 30%;
+  font-size: 30px;
+  margin-left: 10%; 
+} 
 .header-text h1 {
   margin-top: 5px;
   font-size: 50px;
@@ -133,13 +153,14 @@ font-weight: 700;
   flex-basis: 30%; /*flex item ar initial length*/
 }
 
+
+.about_col_2 {
+  flex-basis: 65%; /*here 30+65=95 so 5% gap ta  hobe row ar vitore joto class thakbe tader majhe*/
+}
 .about_col_1 img {
   width: 100%;
   border-radius: 25px;
   margin-top: 50px;
-}
-.about_col_2 {
-  flex-basis: 65%; /*here 30+65=95 so 5% gap ta  hobe row ar vitore joto class thakbe tader majhe*/
 }
 .about_col_2 p {
   font-size: 25px;
@@ -155,6 +176,9 @@ font-weight: 700;
   font-weight: 500;
   cursor: pointer; /*skill edu ar upor mouse nile hand sign dibe*/
   position: relative; /*  relative positioning moves an element relative to its default position on the page, while absolute positioning moves an element relative to its nearest positioned ancestor.*/
+}
+.tab-links:hover {
+  color:rgb(191, 152, 107);
 }
 .tab-links::after {
   content: '';
@@ -288,6 +312,7 @@ transition: height 0.5s ;
   padding: 20px 0 10px 0;
   margin-bottom: 30px;
   font-size: 20px;
+  font-weight: 100;
 }
 .contact-left{
   flex-basis: 35%;
@@ -429,13 +454,7 @@ nav .fa-solid{
 #header{ 
     background-image:url(./kk.jpeg) ;
   } 
-  .header-text{
-    margin-top:60% ;
-    font-size: 16px;
-  }
-  .header-text h1{
- font-size: 30px;
-  }
+
   .logo{
     font-size: 2px;
     margin-left: 0;
@@ -468,10 +487,25 @@ nav ul{
   }
 
 
+.header-col1,.header-col2{
+  flex-basis: 100%;
+}
+.header-col1 img{
+  margin-top: 50px;
+  margin-left: 80px;
+}
+.header-text{
+  margin-top:5px ;
+  font-size: 16px;
+}
+.header-text h1{
+font-size: 25px;
+}
 
   .sub-title{
     font-size: 40px;
   }
+
   .about_col_1 , .about_col_2{
     flex-basis: 100%;/*The flex-basis CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing .*/
   }
