@@ -18,6 +18,8 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
+  background-repeat: no-repeat;
 }
 .container {
   padding: 10px 10%;
@@ -133,10 +135,15 @@ font-weight: 700;
 
 .about_col_1 img {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 25px;
+  margin-top: 50px;
 }
 .about_col_2 {
   flex-basis: 65%; /*here 30+65=95 so 5% gap ta  hobe row ar vitore joto class thakbe tader majhe*/
+}
+.about_col_2 p {
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
 }
 .tab-titles {
   display: flex;
@@ -166,10 +173,20 @@ font-weight: 700;
 
 .tab-contents ul li{
   margin: 10px 0;
+  font-size: 16px;
+  padding: 2px;
 }
+.tab-contents  ul li a{
+  color:rgb(6, 6, 164);
+}
+.tab-contents  ul li a:hover{
+color: green;
+}
+
+
 .tab-contents ul li span{
   color: #b54769;
-  font-size: 14px;
+  font-size:16px;
 }
 .tab-contents{
   display: none;  /* joto gulo tab content class ar silo shobai hide hoye jabe*/
@@ -410,7 +427,7 @@ nav .fa-solid{
 /* ---css for small screen----- */
 @media only screen and (max-width:600px){ /*0px thekle maximum 600px screen size hole nicher code execute koro generally android*/
 #header{ 
-    background-image:url(./background.jpg) ;
+    background-image:url(./kk.jpeg) ;
   } 
   .header-text{
     margin-top:60% ;
@@ -461,6 +478,11 @@ nav ul{
   .about_col_1{
     margin-bottom: 30px;
   }
+
+  .about_col_1 img {
+    border-radius: 50px;
+    margin-top: 10px;
+  }
   .about_col_2{
     font-size: 14px;
   }
@@ -472,12 +494,7 @@ nav ul{
     font-size: 40px;
   }
 
- /* .touch{
-  text-align:center;
-    padding: 20px 0 0 0;
-    margin-bottom: - px;
-    font-size: 25px;
- } */
+
  .touch{
   text-align:center;
   padding: 20px 0 0 0;
