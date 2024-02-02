@@ -18,6 +18,8 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
+  background-repeat: no-repeat;
 }
 .container {
   padding: 10px 10%;
@@ -26,7 +28,7 @@ body {
 nav {
   display: flex; /*item gulo image ar pashe side by side */
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   flex-wrap: wrap;
  position: fixed;
  width: 100%;
@@ -36,18 +38,34 @@ nav {
  padding: 7px;
  z-index: 2;
 } 
-.logo {
-  width: 0px;
-  margin-left: 10px;
-  left: 0;
-  position: relative;
-}
 
+.l{
+  margin-left: 70px;
+  left: 0;
+}
+.it{
+
+margin-right: 50px;
+
+}
 nav ul li {
   display: inline-block; /* sm line a logo, nav bar items chole ashbe*/
   list-style: none;
      
-  margin: 10px 50px 10px 0;
+  margin: 10px 80px 10px 0;
+}
+@media only screen and (max-width:840px){ 
+  .l{
+    margin-left: 10px;
+  }
+  .it{
+    margin-right: 40px;
+  }
+  nav ul li {
+
+       
+    margin: 10px 40px 10px 0;
+  }
 }
 
 nav ul li a {
@@ -71,14 +89,34 @@ nav ul li a:hover::after {
   width: 100%;
 }
 nav ul li a:hover{
-  color:bisque;
+  color:rgb(191, 152, 107);
   opacity: 0.5;
 }
-.header-text{
-  margin-top: 10%;
-  font-size: 30px;
-  margin-left: 10%;
+.header-row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+.header-col1{
+  flex-basis: 35%;
+}
+.header-col1 img{
+  width: 70%;
+  height: 80%;
+  border-radius: 70px;
+  margin-top: 200px;
+  margin-left:100px ;
+}
+
+.header-col2{
+  flex-basis: 60%;
+
+}
+.header-text{
+    margin-top: 30%;
+  font-size: 30px;
+  margin-left: 10%; 
+} 
 .header-text h1 {
   margin-top: 5px;
   font-size: 50px;
@@ -115,12 +153,18 @@ font-weight: 700;
   flex-basis: 30%; /*flex item ar initial length*/
 }
 
-.about_col_1 img {
-  width: 100%;
-  border-radius: 15px;
-}
+
 .about_col_2 {
   flex-basis: 65%; /*here 30+65=95 so 5% gap ta  hobe row ar vitore joto class thakbe tader majhe*/
+}
+.about_col_1 img {
+  width: 100%;
+  border-radius: 25px;
+  margin-top: 50px;
+}
+.about_col_2 p {
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
 }
 .tab-titles {
   display: flex;
@@ -132,6 +176,9 @@ font-weight: 700;
   font-weight: 500;
   cursor: pointer; /*skill edu ar upor mouse nile hand sign dibe*/
   position: relative; /*  relative positioning moves an element relative to its default position on the page, while absolute positioning moves an element relative to its nearest positioned ancestor.*/
+}
+.tab-links:hover {
+  color:rgb(191, 152, 107);
 }
 .tab-links::after {
   content: '';
@@ -150,10 +197,20 @@ font-weight: 700;
 
 .tab-contents ul li{
   margin: 10px 0;
+  font-size: 16px;
+  padding: 2px;
 }
+.tab-contents  ul li a{
+  color:rgb(6, 6, 164);
+}
+.tab-contents  ul li a:hover{
+color: green;
+}
+
+
 .tab-contents ul li span{
   color: #b54769;
-  font-size: 14px;
+  font-size:16px;
 }
 .tab-contents{
   display: none;  /* joto gulo tab content class ar silo shobai hide hoye jabe*/
@@ -255,6 +312,7 @@ transition: height 0.5s ;
   padding: 20px 0 10px 0;
   margin-bottom: 30px;
   font-size: 20px;
+  font-weight: 100;
 }
 .contact-left{
   flex-basis: 35%;
@@ -394,15 +452,9 @@ nav .fa-solid{
 /* ---css for small screen----- */
 @media only screen and (max-width:600px){ /*0px thekle maximum 600px screen size hole nicher code execute koro generally android*/
 #header{ 
-    background-image:url(./background.jpg) ;
+    background-image:url(./kk.jpeg) ;
   } 
-  .header-text{
-    margin-top:60% ;
-    font-size: 16px;
-  }
-  .header-text h1{
- font-size: 30px;
-  }
+
   .logo{
     font-size: 2px;
     margin-left: 0;
@@ -435,15 +487,35 @@ nav ul{
   }
 
 
+.header-col1,.header-col2{
+  flex-basis: 100%;
+}
+.header-col1 img{
+  margin-top: 50px;
+  margin-left: 80px;
+}
+.header-text{
+  margin-top:5px ;
+  font-size: 16px;
+}
+.header-text h1{
+font-size: 25px;
+}
 
   .sub-title{
     font-size: 40px;
   }
+
   .about_col_1 , .about_col_2{
     flex-basis: 100%;/*The flex-basis CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing .*/
   }
   .about_col_1{
     margin-bottom: 30px;
+  }
+
+  .about_col_1 img {
+    border-radius: 50px;
+    margin-top: 10px;
   }
   .about_col_2{
     font-size: 14px;
@@ -456,12 +528,7 @@ nav ul{
     font-size: 40px;
   }
 
- /* .touch{
-  text-align:center;
-    padding: 20px 0 0 0;
-    margin-bottom: - px;
-    font-size: 25px;
- } */
+
  .touch{
   text-align:center;
   padding: 20px 0 0 0;

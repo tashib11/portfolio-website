@@ -2,7 +2,7 @@
 var tablinks=document.getElementsByClassName("tab-links");
 var tabcontents=document.getElementsByClassName("tab-contents");
 
-function openTab(tabname){
+function openTab(tabname,event){
     for ( tablink of tablinks){  // In simple terms forIN iterates over the KEYS IN the array(index)/object(key), whereas forOF iterates over the VALUES OF the array(value).
         tablink.classList.remove("active-link");
     }
@@ -11,9 +11,26 @@ function openTab(tabname){
     }
     // document.getElementById(tabname).classList.add("active-link"); hobe na cz id name unique hote hoi
     event.currentTarget.classList.add("active-link")
-
+/* if i not pass event as paramete , then here event will be depreciated,The event object is typically passed as an argument to the event handler function. If you're seeing a deprecation warning, it's likely because you're trying to access event without passing it as an argument to the function.
+To resolve this,To resolve this, you should pass the event object as an argument to your openTab function. Here's how you can modify your function to accept the event object: */
     document.getElementById(tabname).classList.add("active-tab");
 }
+
+//kuet once visit then the color will be red
+document.addEventListener('DOMContentLoaded', function() { //By wrapping the code in a DOMContentLoaded event listener, you ensure that the script doesn't run until the entire HTML document has been loaded and parsed. This guarantees that all elements are available in the DOM when the script attempts to access them, allowing the event listener to be added successfully.
+    var kuLink = document.getElementById("kuet");
+    kuLink.addEventListener('click', function() {
+        this.style.color = "purple";
+        
+    });
+});
+document.addEventListener('DOMContentLoaded', function() { //By wrapping the code in a DOMContentLoaded event listener, you ensure that the script doesn't run until the entire HTML document has been loaded and parsed. This guarantees that all elements are available in the DOM when the script attempts to access them, allowing the event listener to be added successfully.
+    var kuLink = document.getElementById("ndc");
+    kuLink.addEventListener('click', function() {
+        this.style.color = "purple";
+        
+    });
+});
 
 //------about page done-------
 
