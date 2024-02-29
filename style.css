@@ -137,38 +137,44 @@ font-weight: 700;
 
 /* -----about----- */
 #about {
-  padding: 80px 0;
-  color: #ababab;
+  margin-top:80px;
+padding: 80px 0;
+color: #ababab;
 }
 .sub-title{
-  font-size: 55px;
-   width: 600;
+font-size: 55px;
+ width: 600;
 }
 .row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
 }
 .about_col_1 {
-  flex-basis: 30%; /*flex item ar initial length*/
+  flex-basis: 45%; /*flex item ar initial length*/
 }
 
 
 .about_col_2 {
-  flex-basis: 65%; /*here 30+65=95 so 5% gap ta  hobe row ar vitore joto class thakbe tader majhe*/
+  flex-basis: 50%; /*here 30+65=95 so 5% gap ta  hobe row ar vitore joto class thakbe tader majhe*/
 }
-.about_col_1 img {
-  width: 100%;
-  border-radius: 25px;
-  margin-top: 50px;
-}
-.about_col_2 p {
+
+.about_col_1 p {
+  /* width: 100%; */
   font-size: 25px;
   font-family: 'Poppins', sans-serif;
+  /* border-radius: 25px; */
+  margin-top: 25px;
 }
+.about_col_2 p {
+  /* width: 100%; */
+  font-size: 25px;
+ 
+}
+
 .tab-titles {
-  display: flex;
-  margin: 20px 0 40px;
+display: flex;
+margin: 25px 0 40px;
 }
 .tab-links {
   margin-right: 50px;
@@ -218,13 +224,109 @@ color: green;
 .tab-contents.active-tab{
   display: block;  /* but protom website a dhuktei active tab class ar jei tab content ase sheta show to kora lagbe*/
 }
+#edu{
+  font-size: 17px;
+}
+/* TIMELINE SECTION */
 
-/* portfolio---------- */
-#project{
-  padding: 50px 0;
-  margin-top: 10%;
+#timeline,
+.history-tl-container {
+  position: relative;
+  align-items: start;
+}
+
+.history-tl-container {
+  width: 50%;
+  align-items: center;
+  display: block;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.history-tl-container ul.timeline-ul {
+  margin: 20px 0;
+  padding: 0;
+  display: inline-block;
 
 }
+
+.history-tl-container ul.timeline-ul li {
+  list-style: none;
+  margin-left: 0rem;
+  min-height: 50px;
+  border-left: 1px dashed #86D6FF;
+  padding: 0 0 50px 30px;
+  position: relative;
+}
+
+.history-tl-container ul.timeline-ul li:last-child {
+  border-left: 0;
+}
+
+.history-tl-container ul.timeline-ul li::before {
+  position: absolute;
+  left: -18px;
+  top: -5px;
+  content: " ";
+  border: 8px solid rgba(255, 255, 255, 0.74);
+  border-radius: 500%;
+  background: #258CC7;
+  height: 20px;
+  width: 20px;
+  transition: all 500ms ease-in-out;
+
+}
+
+.history-tl-container ul.timeline-ul li:hover::before {
+  border-color: #258CC7;
+  transition: all 1000ms ease-in-out;
+}
+
+ul.timeline-ul li .item-detail {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+}
+
+ul.li .timestamp {
+  color: #8D8D8D;
+  position: absolute;
+  width: 100px;
+  left: -50%;
+  text-align: right;
+  font-size: 12px;
+}
+ul.li .timestamp h3 {
+      font-weight: 100;
+      color: #8D8D8D;
+      position: absolute;
+      width: 100px;
+      left: -50%;
+      text-align: right;
+      font-size: 12px;
+}
+
+.bottom-container {
+  position: relative;
+  right: -2.5rem;
+  bottom: 2.5rem;
+}
+
+.time {
+  /* background: #258CC7; */
+  display: inline-block;
+  color:#b54769;
+  font-size: 15px;
+  width: auto;
+  white-space:nowrap;
+}
+
+
+/* portfolio---------- */
+#project {
+  padding: 50px 0;
+  margin-top: 10vw;
+}
+
 #project h1{
   font-size: 60px;
   color:  #ababab;
@@ -518,11 +620,14 @@ font-size: 25px;
     margin-top: 10px;
   }
   .about_col_2{
-    font-size: 14px;
+    font-size: 16px;
   }
   .tab-links {
     font-size: 16px;
     margin-right: 20px;
+  }
+  #skills ul li{
+    font-size: 18px;
   }
   #project h1{
     font-size: 40px;
