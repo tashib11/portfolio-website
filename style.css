@@ -4,8 +4,8 @@
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
-html{
-  scroll-behavior: smooth;/*for nav button moving */
+html {
+  scroll-behavior: smooth; /*for nav button moving */
 }
 body {
   background: #080808;
@@ -30,46 +30,41 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
- position: fixed;
- width: 100%;
- background:#1b1b1b;
- left: 0;
- top: 0;
- padding: 7px;
- z-index: 2;
-} 
+  position: fixed;
+  width: 100%;
+  background: #1b1b1b;
+  left: 0;
+  top: 0;
+  padding: 7px;
+  z-index: 2;
+}
 
-.l{
+.l {
   margin-left: 70px;
   left: 0;
 }
-.it{
-
-margin-right: 50px;
-
+.it {
+  margin-right: 50px;
 }
 nav ul li {
   display: inline-block; /* sm line a logo, nav bar items chole ashbe*/
   list-style: none;
-     
+
   margin: 10px 80px 10px 0;
 }
-@media only screen and (max-width:840px){ 
-  .l{
+@media only screen and (max-width: 840px) {
+  .l {
     margin-left: 10px;
   }
-  .it{
+  .it {
     margin-right: 40px;
   }
   nav ul li {
-
-       
     margin: 10px 40px 10px 0;
   }
 }
 
 nav ul li a {
-  
   color: #fff;
   text-decoration: none;
   font-size: 18px;
@@ -88,72 +83,71 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
-nav ul li a:hover{
-  color:rgb(191, 152, 107);
+nav ul li a:hover {
+  color: rgb(191, 152, 107);
   opacity: 0.5;
 }
-.header-row{
+.header-row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.header-col1{
+.header-col1 {
   flex-basis: 35%;
 }
-.header-col1 img{
+.header-col1 img {
   width: 70%;
   height: 80%;
   border-radius: 70px;
   margin-top: 200px;
-  margin-left:100px ;
+  margin-left: 100px;
 }
 
-.header-col2{
+.header-col2 {
   flex-basis: 60%;
-
 }
-.header-text{
-    margin-top: 30%;
+.header-text {
+  margin-top: 30%;
   font-size: 30px;
-  margin-left: 10%; 
-} 
+  margin-left: 10%;
+}
 .header-text h1 {
   margin-top: 5px;
   font-size: 50px;
 }
 
-.header-text h3{
-font-size: 32px;
-font-weight: 700;
+.header-text h3 {
+  font-size: 32px;
+  font-weight: 700;
 }
 
-.header-text h3:nth-of-type(2){
+.header-text h3:nth-of-type(2) {
   margin-bottom: 30px;
 }
 
-.header-text h3 span{
+.header-text h3 span {
   color: rgb(105, 197, 204);
 }
 
 /* -----about----- */
 #about {
+  margin-top: 80px;
   padding: 80px 0;
   color: #ababab;
-  margin-top: 1%;
+
 }
-.sub-title{
-font-size: 55px;
- width: 600;
+.sub-title {
+  font-size: 55px;
+  width: 600;
 }
 .row {
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .about_col_1 {
   flex-basis: 45%; /*flex item ar initial length*/
 }
-
 
 .about_col_2 {
   flex-basis: 50%; /*here 30+65=95 so 5% gap ta  hobe row ar vitore joto class thakbe tader majhe*/
@@ -165,10 +159,10 @@ flex-wrap: wrap;
   /* border-radius: 25px; */
   margin-top: 25px;
 }
-/* .about_col_2 p {
+ .about_col_2 p {
   font-size: 25px;
-  font-family: 'Poppins', sans-serif;
-} */
+}
+
 .tab-titles {
   display: flex;
   margin: 25px 0 40px;
@@ -181,7 +175,7 @@ flex-wrap: wrap;
   position: relative; /*  relative positioning moves an element relative to its default position on the page, while absolute positioning moves an element relative to its nearest positioned ancestor.*/
 }
 .tab-links:hover {
-  color:rgb(191, 152, 107);
+  color: rgb(191, 152, 107);
 }
 .tab-links::after {
   content: '';
@@ -197,47 +191,58 @@ flex-wrap: wrap;
   width: 50%;
 }
 
-
-.tab-contents ul li{
+.tab-contents ul li {
   margin: 10px 0;
   font-size: 16px;
   padding: 2px;
 }
-.tab-contents  ul li a{
-  color:rgb(6, 6, 164);
+.tab-contents ul li a {
+  color: rgb(6, 6, 164);
 }
-.tab-contents  ul li a:hover{
-color: green;
+.tab-contents ul li a:hover {
+  color: green;
 }
 
-
-.tab-contents ul li span{
+.tab-contents ul li span {
   color: #b54769;
-  font-size:16px;
+  font-size: 16px;
 }
-.tab-contents{
-  display: none;  /* joto gulo tab content class ar silo shobai hide hoye jabe*/
+.tab-contents {
+  display: none; /* joto gulo tab content class ar silo shobai hide hoye jabe*/
 }
-.tab-contents.active-tab{
-  display: block;  /* but protom website a dhuktei active tab class ar jei tab content ase sheta show to kora lagbe*/
+.tab-contents.active-tab {
+  display: block; /* but protom website a dhuktei active tab class ar jei tab content ase sheta show to kora lagbe*/
 }
-#edu{
+.edu {
   font-size: 17px;
 }
 /* TIMELINE SECTION */
 
-/* portfolio---------- */
-#project{
-  padding: 50px 0;
-  margin-top: 15%;
+#timeline,
+.history-tl-container {
+  position: relative;
+  align-items: start;
+}
 
+.history-tl-container {
+  width: 50%;
+  align-items: center;
+  display: block;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.history-tl-container ul.timeline-ul {
+  margin: 20px 0;
+  padding: 0;
+  display: inline-block;
 }
 
 .history-tl-container ul.timeline-ul li {
   list-style: none;
   margin-left: 0rem;
   min-height: 50px;
-  border-left: 1px dashed #86D6FF;
+  border-left: 1px dashed #86d6ff;
   padding: 0 0 50px 30px;
   position: relative;
 }
@@ -250,18 +255,17 @@ color: green;
   position: absolute;
   left: -18px;
   top: -5px;
-  content: " ";
+  content: ' ';
   border: 8px solid rgba(255, 255, 255, 0.74);
   border-radius: 500%;
-  background: #258CC7;
+  background: #258cc7;
   height: 20px;
   width: 20px;
   transition: all 500ms ease-in-out;
-
 }
 
 .history-tl-container ul.timeline-ul li:hover::before {
-  border-color: #258CC7;
+  border-color: #258cc7;
   transition: all 1000ms ease-in-out;
 }
 
@@ -271,7 +275,7 @@ ul.timeline-ul li .item-detail {
 }
 
 ul.li .timestamp {
-  color: #8D8D8D;
+  color: #8d8d8d;
   position: absolute;
   width: 100px;
   left: -50%;
@@ -279,13 +283,13 @@ ul.li .timestamp {
   font-size: 12px;
 }
 ul.li .timestamp h3 {
-      font-weight: 100;
-      color: #8D8D8D;
-      position: absolute;
-      width: 100px;
-      left: -50%;
-      text-align: right;
-      font-size: 12px;
+  font-weight: 100;
+  color: #8d8d8d;
+  position: absolute;
+  width: 100px;
+  left: -50%;
+  text-align: right;
+  font-size: 12px;
 }
 
 .bottom-container {
@@ -297,12 +301,11 @@ ul.li .timestamp h3 {
 .time {
   /* background: #258CC7; */
   display: inline-block;
-  color:#b54769;
+  color: #b54769;
   font-size: 15px;
   width: auto;
-  white-space:nowrap;
+  white-space: nowrap;
 }
-
 
 /* portfolio---------- */
 #project {
@@ -310,33 +313,38 @@ ul.li .timestamp h3 {
   margin-top: 10vw;
 }
 
-#project h1{
+#project h1 {
   font-size: 60px;
-  color:  #ababab;
+  color: #ababab;
 }
-.work-list{
+.work-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); /*1fr means 1 part of available space*/
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /*1fr means 1 part of available space*/
   /* grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); These keywords tell the browser to handle the column sizing and element wrapping for us so that the elements will wrap into rows when the width is not large enough to fit them in without any overflow. */
   grid-gap: 40px;
   margin-top: 50px;
 }
-.work{
+.work {
   border-radius: 10px;
-  position: relative;/*because layer class k ancestor(work) ar shathe relatively position dite*/
+  position: relative; /*because layer class k ancestor(work) ar shathe relatively position dite*/
   overflow: hidden;
 }
-.work img{
+.work img {
   width: 100%;
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
 }
 
-.layer{
+.layer {
+  padding: 500px;
+
   width: 100%;
-  height:0;
-  background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -356,16 +364,17 @@ This effectively places the .layer element at the bottom left corner of its near
   justify-content: center;
   text-align: center;
   align-items: center;
-padding: 0 40px;
-font-size: 14px;
+  padding: 0 40px;
+  font-size: 14px;
 
-transition: height 0.5s ;
+  transition: height 0.5s;
 }
-.layer h2 h3{
+
+.layer h2 h3 {
   font-weight: 500;
   margin-bottom: 20px;
 }
-.layer a{
+.layer a {
   margin-top: 20px;
   color: #ff004f;
 
@@ -377,51 +386,49 @@ transition: height 0.5s ;
   height: 60px;
   border-radius: 50%;
   text-align: center;
-
- 
 }
-.work:hover img{
-  transform: scale(1.1);/*mouse raklei pic ta zoom in hobe*/
+.work:hover img {
+  transform: scale(1.1); /*mouse raklei pic ta zoom in hobe*/
 }
 
-.work:hover .layer{
+.work:hover .layer {
   height: 100%;
 }
 /* contact  ------- */
-#contact{
+#contact {
   padding: 50px;
   margin-top: 20%;
 }
-.touch{
-  text-align:center;
+.touch {
+  text-align: center;
   padding: 20px 0 10px 0;
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: 100;
 }
-.contact-left{
+.contact-left {
   flex-basis: 35%;
 }
-.contact-right{
+.contact-right {
   flex-basis: 60%;
 }
-.contact-left h1{
-    font-size: 60px;
+.contact-left h1 {
+  font-size: 60px;
 }
-.contact-left p{
+.contact-left p {
   margin-top: 30px;
 }
-.contact-left p i{
-color:  #0ef;;
-margin-right: 10px;
-font-size: 22px;
+.contact-left p i {
+  color: #0ef;
+  margin-right: 10px;
+  font-size: 22px;
 }
 
-.social-icons{
+.social-icons {
   margin-top: 30px;
 }
 
-.social-icons a{
+.social-icons a {
   text-decoration: none;
   font-size: 20px;
   margin: 10px 15px 30px 0px;
@@ -436,14 +443,14 @@ font-size: 22px;
   align-items: center;
   transition: transform 0.5s;
 }
-.social-icons a:hover{
+.social-icons a:hover {
   transform: scale(1.1);
   background: #0ef;
   color: #ff004f;
   transform: translateY(-5px);
-  box-shadow: 0 0px 20px  #0ef;
+  box-shadow: 0 0px 20px #0ef;
 }
-.btn{
+.btn {
   display: block;
   margin: 50px auto;
   width: fit-content;
@@ -454,28 +461,28 @@ font-size: 22px;
   color: #fff;
   transform: background 0.5s;
 }
-.btn:hover{
+.btn:hover {
   background: #ff004f;
 }
-.btn.btn2{
+.btn.btn2 {
   display: inline-block;
   background: transparent;
   color: #0ef;
   border: 2px solid #0ef;
 
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
-.btn.btn2:hover{
+.btn.btn2:hover {
   transform: translateY(-2px);
   background: #0ef;
-color:blue;
-  box-shadow: 0 0px 2px  #0ef;
-
+  color: blue;
+  box-shadow: 0 0px 2px #0ef;
 }
-.contact-right form{
-width: 100%;
+.contact-right form {
+  width: 100%;
 }
-form input, form textarea{
+form input,
+form textarea {
   width: 100%;
   border: 0;
   outline: none;
@@ -486,13 +493,13 @@ form input, form textarea{
   font-size: 18px;
   border-radius: 6px;
 }
-form .btn2{
+form .btn2 {
   padding: 7px 30px;
   font-size: 18px;
   margin-top: 20px;
   cursor: pointer;
 }
-.copyright{
+.copyright {
   width: 100%;
   text-align: center;
   padding: 15px 0;
@@ -501,11 +508,11 @@ form .btn2{
   margin-top: 20px;
   font-size: 18px;
 }
-.copyright p span{
+.copyright p span {
   color: #ff004f;
 }
 
-.scroll-up-button{
+.scroll-up-button {
   all: unset;
   position: fixed;
   bottom: 80px;
@@ -514,12 +521,13 @@ form .btn2{
   width: 60px;
   background-color: #262626;
   border-radius: 99%;
-  display: flex;
+  display: none; /* Set initial display to none */
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
-.scroll-up-button .arrow-up{
+
+.scroll-up-button .arrow-up {
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
@@ -530,71 +538,72 @@ form .btn2{
   z-index: 1;
 }
 
-
-nav .fa-solid{
+nav .fa-solid {
   display: none;
 }
 /* ---css for small screen----- */
-@media only screen and (max-width:600px){ /*0px thekle maximum 600px screen size hole nicher code execute koro generally android*/
-#header{ 
-    background-image:url(./kk.jpeg) ;
-  } 
+@media only screen and (max-width: 600px) {
+  /*0px thekle maximum 600px screen size hole nicher code execute koro generally android*/
+  #header {
+    background-image: url(./kk.jpeg);
+  }
 
-  .logo{
+  .logo {
     font-size: 2px;
     margin-left: 0;
   }
-  nav .fa-solid{
-    display: block;/*to visible*/
+  nav .fa-solid {
+    display: block; /*to visible*/
     font-size: 25px;
   }
 
-nav ul{
+  nav ul {
     background: #2a2929;
     position: fixed; /*by using pos:fised , it fixed the menu bar to the top-right corner as top=0,right=0*/
     top: 0;
-    right:-150px;/*width 200px tai right -200 korsi ,as result side bar hidden hoye gese*/
+    right: -150px; /*width 200px tai right -200 korsi ,as result side bar hidden hoye gese*/
     width: 150px;
     height: 270px;
     padding-top: 50px;
     z-index: 2;
     transition: right 0.5s;
   }
-  nav ul li{
-   margin: 25px;
-   display: block;/*each element ar after and before break dei*/
+  nav ul li {
+    margin: 25px;
+    display: block; /*each element ar after and before break dei*/
   }
-  nav ul .fa-solid{
+  nav ul .fa-solid {
     position: absolute;
     top: 25px;
     left: 25px;
     cursor: pointer;
   }
 
+  .header-col1,
+  .header-col2 {
+    flex-basis: 100%;
+  }
+  .header-col1 img {
+    margin-top: 50px;
+    margin-left: 80px;
+  }
+  .header-text {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  .header-text h1 {
+    font-size: 25px;
+  }
 
-.header-col1,.header-col2{
-  flex-basis: 100%;
-}
-.header-col1 img{
-  margin-top: 50px;
-  margin-left: 80px;
-}
-.header-text{
-  margin-top:5px ;
-  font-size: 16px;
-}
-.header-text h1{
-font-size: 25px;
-}
-
-  .sub-title{
+  .sub-title {
     font-size: 40px;
   }
 
-  .about_col_1 , .about_col_2{
-    flex-basis: 100%;/*The flex-basis CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing .*/
+  .about_col_1,
+  .about_col_2 {
+    flex-basis: 100%; /*The flex-basis CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing .*/
   }
-  .about_col_1{
+  .about_col_1 {
     margin-bottom: 30px;
   }
 
@@ -602,47 +611,49 @@ font-size: 25px;
     border-radius: 50px;
     margin-top: 10px;
   }
-  .about_col_2{
+  .about_col_2 {
     font-size: 16px;
   }
   .tab-links {
     font-size: 16px;
     margin-right: 20px;
   }
-
-  #skills ul li{
+  #skills ul li p {
     font-size: 18px;
   }
-  #project h1{
+  #skills ul li {
+    font-size: 18px;
+  }
+  #project h1 {
     font-size: 40px;
   }
 
-
- .touch{
-  text-align:center;
-  padding: 20px 0 0 0;
-  margin-bottom: 0px;
-  font-size: 20px;
-}
-  .contact-left , .contact-right{
+  .touch {
+    text-align: center;
+    padding: 20px 0 0 0;
+    margin-bottom: 0px;
+    font-size: 20px;
+  }
+  .contact-left,
+  .contact-right {
     flex-basis: 100%;
   }
   .contact-left {
     margin-top: 22%;
   }
-  .contact-left h1{
+  .contact-left h1 {
     font-size: 40px;
   }
-.contact-left p {
-  font-size: 18px;
-}
-.contact-left p i{
-  color:  #0ef;;
-  margin-right: 1px;
-  font-size: 18px;
+  .contact-left p {
+    font-size: 18px;
+  }
+  .contact-left p i {
+    color: #0ef;
+    margin-right: 1px;
+    font-size: 18px;
   }
 
-  .copyright{
+  .copyright {
     width: 100%;
     font-size: 14px;
   }

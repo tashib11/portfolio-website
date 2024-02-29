@@ -46,25 +46,30 @@ function closeMenu(){
 
 //header text dynamic approach
 
+
+
 var typed= new Typed(".text",{
     strings:["Full stack developer","Android developer","Web developer"],
     typeSpeed:80,backSpeed:50,backDelay:900,
     loop: true
 });
 
-// arrow up creating --------
+// arrow creating
 let lastScrollTop = 0;
 
 window.addEventListener('scroll', function() {
     const scrollTop = document.documentElement.scrollTop;
+    const contactSection = document.getElementById('contact');
+    const btn = document.querySelector(".scroll-up-button");
 
-    if (scrollTop > lastScrollTop) {
-        // Downscroll code
+    if (scrollTop > lastScrollTop || (contactSection && isInContactSection(contactSection))) {
+        // Downscroll or in contact section, show the button
         btn.style.display = "block";
     } else {
-        // Upscroll code
+        // Upscroll and not in contact section, hide the button
         btn.style.display = "none";
     }
+
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
 }, false);
 
@@ -74,6 +79,15 @@ btn.addEventListener("click", () => {
         top: 0, behavior: "smooth"
     });
 });
+
+function isInContactSection(contactSection) {
+    const rect = contactSection.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+}
+
 /*Sure, let's break down the JavaScript code you provided:
 
 1. `let lastScrollTop = 0;` - This line declares a variable named `lastScrollTop` and initializes it to 0. This variable will keep track of the last known scroll position.
