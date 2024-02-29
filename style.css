@@ -139,6 +139,7 @@ font-weight: 700;
 #about {
   padding: 80px 0;
   color: #ababab;
+  margin-top: 1%;
 }
 .sub-title{
   font-size: 55px;
@@ -150,25 +151,27 @@ font-weight: 700;
   flex-wrap: wrap;
 }
 .about_col_1 {
-  flex-basis: 30%; /*flex item ar initial length*/
+  flex-basis: 45%; /*flex item ar initial length*/
 }
 
 
 .about_col_2 {
-  flex-basis: 65%; /*here 30+65=95 so 5% gap ta  hobe row ar vitore joto class thakbe tader majhe*/
+  flex-basis: 50%; /*here 30+65=95 so 5% gap ta  hobe row ar vitore joto class thakbe tader majhe*/
 }
-.about_col_1 img {
-  width: 100%;
-  border-radius: 25px;
-  margin-top: 50px;
-}
-.about_col_2 p {
+.about_col_1 p {
+  /* width: 100%; */
   font-size: 25px;
   font-family: 'Poppins', sans-serif;
+  /* border-radius: 25px; */
+  margin-top: 25px;
 }
+/* .about_col_2 p {
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+} */
 .tab-titles {
   display: flex;
-  margin: 20px 0 40px;
+  margin: 25px 0 40px;
 }
 .tab-links {
   margin-right: 50px;
@@ -222,7 +225,7 @@ color: green;
 /* portfolio---------- */
 #project{
   padding: 50px 0;
-  margin-top: 10%;
+  margin-top: 15%;
 
 }
 #project h1{
